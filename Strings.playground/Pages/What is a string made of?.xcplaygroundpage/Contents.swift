@@ -9,17 +9,17 @@ import Foundation
 //: You can use the .characters property to ...
 // Loop through all the characters in a string
 var animal = "octopus"
-for character in animal.characters {
+for character in animal {
         print ("\(character)")
 }
 
 // Count all the characters in a string
 let theTruth = "Money can't buy me love."
-theTruth.characters.count
+theTruth.count
 
 // Reverse the characters in a string 
 var forwardString = "spoons"
-var charactersReversed = forwardString.characters.reversed()
+var charactersReversed = forwardString.reversed()
 
 // Let's see those reversed characters printed out
 for character in charactersReversed {
