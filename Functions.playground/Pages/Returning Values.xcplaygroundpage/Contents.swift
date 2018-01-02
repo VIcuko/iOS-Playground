@@ -19,10 +19,10 @@ let totalPriceForMealInline = priceOfMeal + calculateTip(priceOfMeal: priceOfMea
 
 // This function validates the length of a password
 func isValidLength(password: String) -> Bool {
-    if password.characters.count >= 8 {
+    if password.count >= 8 {
         return true
     } else {
-
+        return false
     }
 }
 
