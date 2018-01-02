@@ -5,6 +5,6 @@
 var securityDeposit = 500
 var monthlyRent = 900
 // Solution
-var excerptFromLease = "Total is due on the move-in date"
+var excerptFromLease = "$\(monthlyRent * 2 + securityDeposit) is due on the move-in date"
 
 //: [Next](@next)

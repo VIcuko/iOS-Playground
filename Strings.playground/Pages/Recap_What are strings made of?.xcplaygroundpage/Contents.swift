@@ -13,7 +13,7 @@ var monkeyStringWithEmoji = "I saw a 🐒."
 var thiefStringWithEmoji = "He stole my 📱."
 //: ### The characters property of the String struct
 var forwardString = "time"
-var charactersReversed = forwardString.characters.reversed()
+var charactersReversed = forwardString.reversed()
 
 // Let's see those reversed characters printed out
 for character in charactersReversed {
