@@ -29,7 +29,13 @@ func sendToOwner(knowsTheOwner: Bool, person: String) {
 
 // Functions to determine which clubgoers should be admitted
 func screenVIP(age: Int, onGuestList: Bool, knowsTheOwner: Bool) {
-    // TODO: Add your if, else-if statement here!
+    if onGuestList && age >= 21 {
+        admit(person: name)
+    } else if knowsTheOwner {
+        sendToOwner(knowsTheOwner: knowsTheOwner, person: name)
+    } else {
+        deny(person: name)
+    }
 }
 
 screenVIP(age: age, onGuestList: onGuestList, knowsTheOwner: knowsTheOwner)

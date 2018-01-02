@@ -18,6 +18,15 @@ func deny(person: String) {
 
 func screen(onGuestList: Bool, person: String) {
     // TODO: Add your if statement here!
+    if onGuestList && person == name && age >= 18 {
+        admit(person: person)
+    }
+    else{
+        deny(person: person)
+    }
 }
+
+screen(onGuestList: true, person: "Gabrielle")
+
 
 //: [Next](@next)

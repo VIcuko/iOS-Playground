@@ -7,7 +7,6 @@ import Foundation
 let didYouKnowString = "Did you know that Swift strings come with lots of useful functions?"
 let whisperString = "psst" + ", " + didYouKnowString.lowercased()
 let shoutString =  "HEY!" + " " + didYouKnowString.uppercased()
-
 //: ### Exercise 2
 //: How many characters are in this string?
 let howManyCharacters = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?"

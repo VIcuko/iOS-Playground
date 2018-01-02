@@ -16,17 +16,32 @@ func deny(person: String) {
     print("Sorry, \(person), maybe you can go play Bingo with the Android team.")
 }
 
-func screenUnder21(age: Int, onGuestList: Bool) {
+func sendToOwner(person: String){
+    print("\(person), buddy, come on in!")
+}
+
+func screenUnder21(age: Int, onGuestList: Bool, person: String) {
     if onGuestList && age >= 21 {
         admit(person: name)
     }
 
-    if !onGuestList && !(age >= 21) {
+    if onGuestList && !(age >= 21) {
         deny(person: name)
     }
 }
 
-screenUnder21(age: age, onGuestList: onGuestList)
+func screenVIP(age: Int, onGuestList: Bool, knowsTheOwner: Bool) {
+    if onGuestList && age >= 21 {
+        admit(person: name)
+    } else if knowsTheOwner {
+        sendToOwner(person: name)
+    } else {
+        deny(person: name)
+    }
+}
+
+screenVIP(age: age, onGuestList: onGuestList, knowsTheOwner: true)
+
 
 
 //: [Next](@next)
